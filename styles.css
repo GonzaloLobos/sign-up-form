@@ -4,6 +4,7 @@
 }
 
 body {
+  font-family: "Trebuchet MS", sans-serif;
   background-color: #f9fafb;
   padding: 0;
   margin: 0;
@@ -11,6 +12,18 @@ body {
   display: flex;
   align-items: center;
 }
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* ASIDE SECTION */
 
 .image-container {
   background-image: url(./assets/background-image.jpg);
@@ -24,6 +37,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-container {
@@ -55,7 +69,64 @@ body {
   color: #fff;
 }
 
-.form-body {
-  background-color: white;
+/* MAIN SECTION */
+
+.header,
+.form-container h1,
+.form-body,
+.login-text {
+  padding-left: 5%;
+}
+
+.form-button {
+  margin-left: 5%;
+}
+
+.main-container {
   width: 100%;
+}
+
+.header {
+  max-width: 600px;
+}
+
+.header p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.form-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.form-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.form-body > * {
+  padding: 10px 0;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 200px;
+}
+
+form button {
+  margin: 20px 0;
 }
