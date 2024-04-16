@@ -69,7 +69,25 @@ p {
   color: #fff;
 }
 
+.credit a:active {
+  color: #ffa77b;
+}
+
 /* MAIN SECTION */
+
+.main-container {
+  width: 100%;
+}
+
+.header {
+  max-width: 600px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
 .header,
 .form-container h1,
@@ -82,22 +100,9 @@ p {
   margin-left: 5%;
 }
 
-.main-container {
-  width: 100%;
-}
-
-.header {
-  max-width: 600px;
-}
-
-.header p {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
 .form-container {
   background-color: #fff;
+  box-shadow: 5px 3px 8px #dadbdb;
   width: 100%;
   padding: 20px 0;
   margin-top: 40px;
@@ -121,12 +126,50 @@ p {
 
 label {
   display: block;
+  font-family: Verdana, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: #1f2937;
 }
 
 input {
   width: 200px;
+  font-size: 0.9rem;
+  margin-top: 3px;
+  padding: 4px 8px;
+  border: 1px solid #dadbdb;
+  border-radius: 3px;
+}
+
+input:focus {
+  border: 1px solid #74a1a4;
+  outline: none;
+  box-shadow: 3px 2px 4px #dadbdb;
 }
 
 form button {
+  font-size: 0.9rem;
+  background-color: #74a1a4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 32px;
   margin: 20px 0;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+form button:focus {
+  outline: 2px solid #92b7b7;
+}
+
+form button:active {
+  background-color: #92b7b7;
+}
+
+.login-text a {
+  color: #74a1a4;
 }
