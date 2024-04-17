@@ -148,6 +148,27 @@ input:focus {
   box-shadow: 3px 2px 4px #dadbdb;
 }
 
+input:focus:invalid,
+.input-error,
+.input-error:focus {
+  border: 1px solid #c03333;
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+}
+
+.error-msg {
+  position: absolute;
+}
+
+.error-msg::after {
+  content: "* Passwords do not match";
+  color: #c03333;
+  font-size: 0.8rem;
+}
+
 form button {
   font-size: 0.9rem;
   background-color: #74a1a4;
